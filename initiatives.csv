@@ -1,9 +1,9 @@
 initiative_id,title,category,type,negotiation_lever,owner,stage,start_date,expected_end_date,baseline_annual_spend,expected_saving_pct,confidence_level,realized_saving_value
-1,BID Notebook,TI,Gross,Change Relationship,Fernando Torres,implementation,nov/24,dez/24,868804.0,0.03,medium,0.0
-2,BID Facilities - PORTARIA E VIGILANCIA,FACILITIES,Gross,Change Specification,Katia Izaias,implementation,jul/24,mar/25,2733906.0,0.04,medium,150000.0
-3,Política de Viagens,FACILITIES,Net,Change Specification,Katia Izaias,idea,mai/25,jul/25,1488891.0,0.05,high,0.0
-4,BID Embalagens Metalicas,EMBALAGEM,Gross,Change Supplier,Danielle Levote,implementation,jan/25,abr/25,7354790.0,0.06,medium,0.0
-5,BID Polimero para Massa Asfaltica,MATERIA-PRIMA,Net,Cost Analysis,Andrea Lecher,implementation,jul/24,fev/25,4306958.0,0.07,medium,0.0
-6,Bid Carbonato,MATERIA-PRIMA,Gross,Global Procurement,Danielle Levote,closed,jan/25,abr/25,1747931.0,0.08,medium,100000.0
-7,BID Potes Plasticos,EMBALAGEM,Net,Change Supplier,Rafael Gonçalves,idea,nov/24,jun/25,1463790.0,0.09,medium,0.0
-8,Fralda Reutilizavel,Fralda,Net,Low-cost Countries Sourcing,Davi P,idea,sep.26,Out.28,10000.0,0.15,low,0.0
+1,BID Notebook,TI,Gross,Change Relationship,Comprador 1,implementation,nov/24,dez/24,868804.0,0.03,medium,0.0
+2,BID Facilities - PORTARIA E VIGILANCIA,FACILITIES,Gross,Change Specification,Comprador 2,implementation,jul/24,mar/25,2733906.0,0.04,medium,150000.0
+3,Política de Viagens,FACILITIES,Net,Change Specification,Comprado 3,idea,mai/25,jul/25,1488891.0,0.05,high,0.0
+4,BID Embalagens Metalicas,EMBALAGEM,Gross,Change Supplier,Comprador 4,implementation,jan/25,abr/25,7354790.0,0.06,medium,0.0
+5,BID Polimero para Massa Asfaltica,MATERIA-PRIMA,Net,Cost Analysis,Comprador 2,implementation,jul/24,fev/25,4306958.0,0.07,medium,0.0
+6,Bid Carbonato,MATERIA-PRIMA,Gross,Global Procurement,Comprador 1,closed,jan/25,abr/25,1747931.0,0.08,medium,100000.0
+7,BID Potes Plasticos,EMBALAGEM,Net,Change Supplier,Comprador 3,idea,nov/24,jun/25,1463790.0,0.09,medium,0.0
+8,Fralda Reutilizavel,Fralda,Net,Low-cost Countries Sourcing,Comprador 1,idea,sep.26,Out.28,10000.0,0.15,low,0.0
