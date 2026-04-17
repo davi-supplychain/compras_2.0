@@ -15,6 +15,7 @@ import os
 
 DASHBOARD_URL = "https://SEU-APP.streamlit.app"
 
+import os
 EMAIL_FROM = "davi.spinconsulting@gmail.com"
 EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
 
