@@ -9,11 +9,11 @@ from email.mime.text import MIMEText
 # ========================
 # CONFIG
 # ========================
-DASHBOARD_URL = "https://SEU-APP.streamlit.app"
+DASHBOARD_URL = "https://compras-2-0-demo.streamlit.app"
 
 import os
 
-DASHBOARD_URL = "https://SEU-APP.streamlit.app"
+DASHBOARD_URL = "https://compras-2-0-demo.streamlit.app"
 
 import os
 EMAIL_FROM = "davi.spinconsulting@gmail.com"
