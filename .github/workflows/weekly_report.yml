@@ -19,9 +19,12 @@ jobs:
           python-version: "3.11"
 
       - name: Install deps
-        run: pip install pandas
+        run: pip install pandas playwright
 
       - name: Run report
         env:
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
         run: python weekly_report.py
+
+      - name: Install browser
+        run: playwright install chromium
