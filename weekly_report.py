@@ -12,7 +12,7 @@ from playwright.sync_api import sync_playwright
 # ========================
 # CONFIG
 # ========================
-DASHBOARD_URL = "https://SEU-APP.streamlit.app"
+DASHBOARD_URL = "https://compras20.streamlit.app/"
 
 EMAIL_FROM = "davi.spinconsulting@gmail.com"
 EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
