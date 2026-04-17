@@ -22,4 +22,6 @@ jobs:
         run: pip install pandas
 
       - name: Run report
+        env:
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
         run: python weekly_report.py
