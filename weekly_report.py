@@ -9,11 +9,11 @@ from email.mime.text import MIMEText
 # ========================
 # CONFIG
 # ========================
-DASHBOARD_URL = "https://compras-2-0-demo.streamlit.app"
+DASHBOARD_URL = "https://compras20.streamlit.app/"
 
 import os
 
-DASHBOARD_URL = "https://compras-2-0-demo.streamlit.app"
+DASHBOARD_URL = "https://compras20.streamlit.app/"
 
 import os
 EMAIL_FROM = "davi.spinconsulting@gmail.com"
@@ -73,29 +73,42 @@ df.to_csv(snapshot_file, index=False)
 # EMAIL HTML
 # ========================
 html = f"""
-<h2>Compras 2.0 – Weekly Report</h2>
+<div style="font-family: Arial; max-width: 800px; margin:auto;">
 
-<p><b>Spend:</b> R$ {total_spend:,.0f}</p>
-<p><b>Pipeline:</b> R$ {pipeline:,.0f}</p>
-<p><b>Realized:</b> R$ {realized:,.0f}</p>
+<h2 style="color:#1f2937;">📊 Compras 2.0 – Weekly Report</h2>
 
-<hr>
+<div style="background:#0f172a; color:white; padding:15px; border-radius:8px;">
+<b>Pipeline:</b> <span style="color:#fbbf24;">R$ {pipeline:,.0f}</span> |
+<b>Realizado:</b> <span style="color:#22c55e;">R$ {realized:,.0f}</span>
+</div>
 
-<h3>Variação semanal</h3>
-<p>Pipeline: {delta_pipeline:,.0f}</p>
-<p>Realized: {delta_realized:,.0f}</p>
+<br>
 
-<hr>
+<h3 style="color:#374151;">📈 Variação semanal</h3>
 
-<h3>Novas iniciativas</h3>
-{new_items[['title']].to_html(index=False) if not new_items.empty else 'Nenhuma'}
-
-<h3>Iniciativas concluídas</h3>
-{closed_items[['title']].to_html(index=False) if not closed_items.empty else 'Nenhuma'}
+<ul>
+<li>Pipeline: <b style="color:#fbbf24;">R$ {delta_pipeline:,.0f}</b></li>
+<li>Realizado: <b style="color:#22c55e;">R$ {delta_realized:,.0f}</b></li>
+</ul>
 
 <hr>
 
-<p><a href="{DASHBOARD_URL}">Abrir Dashboard</a></p>
+<h3>🆕 Novas iniciativas</h3>
+{new_items[['title']].to_html(index=False) if not new_items.empty else "<p>Nenhuma</p>"}
+
+<h3>✅ Concluídas</h3>
+{closed_items[['title']].to_html(index=False) if not closed_items.empty else "<p>Nenhuma</p>"}
+
+<hr>
+
+<div style="text-align:center; margin-top:20px;">
+<a href="{DASHBOARD_URL}" 
+style="background:#2563eb;color:white;padding:12px 20px;text-decoration:none;border-radius:6px;">
+👉 Abrir Dashboard Completo
+</a>
+</div>
+
+</div>
 """
 
 # ========================
